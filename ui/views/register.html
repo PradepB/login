@@ -1,0 +1,12 @@
+<div ng-controller="logincontroller">
+    <form ng-submit="addUser()">
+        <div>
+        <input type="text" ng-model="username" placeholder="username"></div>
+        <div><input type="text" ng-model="email" placeholder="email"></div>
+        <div><input type="password" ng-model="password" placeholder="password"></div>
+        <div><input type="password" ng-model="cpassword" placeholder="re-password"></div>
+        <divli><button type="submit">Register</button></div>
+        <div>{{errorMessage}}</div>
+        <a href="#/signin">Login</a>
+    </form>
+</div>

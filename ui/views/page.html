@@ -1,0 +1,44 @@
+ 
+<div ng-controller="logincontroller" >
+	<div ng-init="getUser()">
+	  <h1>{{username}}</h1>
+	  <h3>{{name}}</h3>
+
+	</div>
+		<a href="#/index">Sign Out</a>
+</div>
+
+<html ng-app="mainApp">
+	
+	<head>
+		  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.js"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
+<script src="../controller/controller.js"></script>
+	</head>
+	<body ng-controller="listCtrl">
+		<div ng-init="userGet()">
+		<table>
+			<thead>
+			<tr>
+				<th>Name</th>
+				<th>Email</th>
+			</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td><input type="text" ng-model="userli.name"></td>
+					<td><input type="text" ng-model="userli.email"></td>
+					<td><button id="userpost" ng-click="useradd()" type="submit">Add</button></td>
+				</tr>
+<h3>{{name}}</h3>
+<tr ng-repeat="ul in listofuser">
+	<td>{{ul.name}}</td>
+	<td>{{ul.email}}</td>
+
+
+			</tbody>
+		</table>
+		</div>
+
+	</body>
